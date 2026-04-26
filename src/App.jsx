@@ -289,7 +289,7 @@ export default function App() {
               <div className="flex gap-2 items-start">
                 <Icon type="warning" className="h-5 w-5 mt-0.5 rounded-full bg-neutral-200 text-neutral-700 text-xs shrink-0" />
                 <div>
-                  <p className="font-bold text-sm">Current warning</p>
+                  <p className="font-bold text-sm">Current difficulty</p>
                   <p className="text-sm text-neutral-600 mt-1">{odds.warning}</p>
                 </div>
               </div>
