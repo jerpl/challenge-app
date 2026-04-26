@@ -2,43 +2,28 @@ import React, { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const STORAGE_KEY = "lucasChallengeSession_v1";
-
 const CHALLENGES = {
   easy: [
-    "Each group member must eat an entire lime wedge down to the shell. Video required.",
-    "Attempt a cartwheel or dramatic spin. Success is not required. Video required.",
-    "Recreate the Titanic pose from an elevated-but-safe location. Photo required.",
-    "One group member must piggyback another group member for one lap of the bar. Video required.",
-    "Take a shot of ketchup. Video required.",
-    "Film a dramatic slow-motion sip like you are in a movie trailer.",
-    "Take a fake album cover photo with the full team.",
-    "Swap one visible clothing item or accessory with your teammate and pose like nothing happened.",
-    "Film a 5-second synchronized dance move with your teammate.",
-    "Take a photo pretending you have just spotted Lucas in the wild. Maximum drama."
+    "Eat an entire lime wedge down to the shell (video)",
+    "Do a cartwheel on the dance floor (video) (wash your hands after)",
+    "Recreate the titanic photo but you must find or create a good elevated location such as a staircase or standing on an elevated surface. (Photo)",
+    "One group member has to piggy back another group member for 1 lap of the bar (video)",
+    "Shot of milk or any other unconventional thing you can get from the bar (video)",
+    "Swap a visible item of clothing with a teammate (before and after photos)",
+    "Convince a stranger to trust fall (video)"
   ],
   medium: [
-    "Set up your phone inside and take a cringe video of yourselves walking into the bar as if people care.",
-    "Film yourselves walking past the camera three times like video game NPCs.",
-    "Create a 10-second fake movie trailer for your team’s search for Lucas.",
-    "Film a controlled trust fall between teammates. Keep it safe and tiny.",
-    "Create a 5-second Bar Olympics event using a napkin, coaster, or straw, then celebrate like you won gold.",
-    "Film one teammate giving a dramatic 10-second speech about something completely meaningless.",
-    "Do a full-team freeze frame for 10 seconds, then casually resume like nothing happened.",
-    "Film a fake paparazzi moment where one teammate is the celebrity and the other is the press.",
-    "Make a perfect loop video where the ending connects back to the beginning.",
-    "Take a photo recreating a famous movie poster using only your team and bar props."
+    "Order any canned carbonated beverage / soda and shotgun it (video)",
+    "Set up phone inside and take a video of yourselves walking into the bar as if people care (video)",
+    "pull up a chair to a table of strangers and get a photo with them (photo)",
+    "Go up to the bartender and get a glass of water then chug the water agressively as soon as they hand it to you (video)"
   ],
   hard: [
-    "Film a full slow-motion entrance into the bar while everyone stays completely serious.",
-    "Create and perform a 15-second Lucas theme song. Video required.",
-    "Get at least three people, including your team, to do the same pose in one photo. Ask politely.",
-    "Film a fake documentary intro about your team’s mission to find Lucas.",
-    "Film the ‘cool guys don’t look at explosions’ walk away from an imaginary disaster.",
-    "Recreate a dramatic final boss reveal for one teammate entering the bar.",
-    "Create a 15-second commercial advertising your team as professional Lucas hunters.",
-    "Do a perfectly synchronized group sip with at least four people. Video required.",
-    "Film a dramatic courtroom-style confession about why you deserve to find Lucas first.",
-    "Take the most unnecessarily intense team photo possible using lighting, angles, and poses."
+    "Get a video of you doing something that loops perfectly as in when it ends and you play it again you start where you ended (actually hard)",
+    "Stand on a chair and tell a joke - if nobody acknowledges then try again until you get reaction (video)",
+    "You must convince a stranger to buy one drink for someone in your group",
+    "Go order something from the bar but forget what you want mid sentence and hesitate and “umm”  for 10 seconds while the bar tender is waiting",
+    "Ask a bald guy if you can kiss his head (video). He does not need to say yes."
   ]
 };
 
